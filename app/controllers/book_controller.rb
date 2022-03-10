@@ -1,4 +1,5 @@
 class BookController < ApplicationController
+
     # The list method gives you a list of all the books in the database.
     def list
         # Tells Rails to search the books table and store each row it finds in the @books instance object.

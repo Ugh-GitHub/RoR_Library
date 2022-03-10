@@ -75,3 +75,6 @@ Insert Definition here
 `rake db:create:all`
 Change the environmental variable for the database to work on
 `export RAILS_ENV=development`
+List all your defined routes (useful for tracking down routing problems or giving a good overview of the URLS in an app you're trying to learn)
+`rake routes` (prior to 6.1.x)
+`rails routes` (post 6.1.x)
