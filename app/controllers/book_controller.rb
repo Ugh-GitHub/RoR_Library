@@ -57,7 +57,7 @@ class BookController < ApplicationController
         
         # The update_attributes method is like the save method, but 
         # overwrites the attributes of the existing row.
-        if @book.update_attributes(book_param)
+        if @book.update(book_param)
             redirect_to :action => 'show', :id => @book
         else
             # Required in case the data does not save successfully, then
@@ -81,6 +81,10 @@ class BookController < ApplicationController
         # Used to collect all the fields from object :books.
         params.require(:books).permit(:title, :price, :subject_id, :description)
     end
+
+    def book_param
+        params.require(:book).permit(:title, :price, :subject_id, :description)
+     end
 
     # Displays all subject defined by id in params[:id]
     def show_subjects
