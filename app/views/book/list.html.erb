@@ -1,3 +1,9 @@
+<ul id = "subjects">
+   <% Subject.all.each do |c| %>
+   <li><%= link_to c.name, :action => "show_subjects", :id => c.id %></li>
+   <% end %>
+</ul>
+
 <% if @books.blank? %>
 <p>There are not any books currently in the system.</p>
 <% else %>

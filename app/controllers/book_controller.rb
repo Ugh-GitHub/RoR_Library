@@ -1,4 +1,5 @@
 class BookController < ApplicationController
+    layout 'standard'
 
     # The list method gives you a list of all the books in the database.
     def list
