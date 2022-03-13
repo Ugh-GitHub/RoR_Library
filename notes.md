@@ -68,6 +68,8 @@ Rakefile − This file is similar to Unix Makefile, which helps with building, p
 ## Scripts
 
 Insert Definition here
+`rails new [myapp] --database=postgresql`
+
 `rails generate model`
 
 `rake db:migrate`
